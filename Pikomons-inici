@@ -1,0 +1,34 @@
+
+#include <stdio.h>
+
+int main() {
+    int opcao;
+
+    printf("Escolha seu Pokemon:\n");
+    printf("1 - Bulbasaur\n");
+    printf("2 - Charmander\n");
+    printf("3 - Squirtle\n");
+
+    printf("\nDigite o numero correspondente a sua escolha: ");
+    scanf("%d", &opcao);
+
+    switch (opcao) {
+        case 1:
+            printf("\nBulbasaur, pokemon de grama, forte contra o tipo agua e fraco contra o tipo fogo, boa sorte treinador/a!\n");
+            break;
+
+        case 2:
+            printf("\nCharmander, pokemon de fogo, forte contra o tipo grama e fraco contra o tipo agua, boa sorte treinador/a!\n");
+            break;
+
+        case 3:
+            printf("\nSquirtle, pokemon de agua, forte contra o tipo fogo e fraco contra o tipo grama, boa sorte treinador/a!\n");
+            break;
+
+        default:
+            printf("\nOpcao invalida! Escolha um numero entre 1 e 3.\n");
+            break;
+    }
+
+    return 0;
+}
